@@ -1,0 +1,23 @@
+<div id="delete-show"></div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Author</th>
+            <th>Email</th>
+            <th>Comment</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% rows.forEach( function(row){  %>
+        <tr>
+            <td><%= row.ID %></td>
+            <td><%= row.author %></td>
+            <td><%= row.email %></td>
+            <td><%= row.content %></td>
+            <td><a href="javascript:;" class="delete" data-id="<%= row.ID %>"> Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>    

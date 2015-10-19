@@ -1,0 +1,33 @@
+<%#
+App Start 
+
+@package app
+@subpackage app.views 
+@since 1.0.0
+%><%- include('header.html'); %>
+<div class="container ">
+    <div class="row">
+        <div class="col-md-3 sidebar highlight">
+                <div class="form-group">
+                    <label for="nm">Name</label>
+                    <input type="text"  id="nm" name="nm" class="form-control" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text"  id="email" name="email" class="form-control" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" class="form-control" placeholder="Enter messages"></textarea>
+                </div>
+                <button type="button" id="submit" class="btn btn-default">Submit</button>
+                <div class="form-group">
+                    <label id="error"></label>
+                </div>
+        </div>
+        <div class="col-md-9 main highlight app-list-view">
+            <!-- List View via Ajax -->
+        </div>
+    </div>    
+</div>
+<%- include('footer.html'); %>
